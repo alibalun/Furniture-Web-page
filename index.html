@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind app</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Font awesome CDN -->
+    <script src="https://kit.fontawesome.com/7d2c7b5e28.js" crossorigin="anonymous"></script>
+    <!-- Google fonts Qwitcher CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="select-none overflow-x-hidden w-screen">
+    <!-- Media queries w-[480px] xl:w-[1300px] lg:w-[1024px] md:w-[780px] -->
+    <nav class="w-screen md:flex md:justify-center">
+        <div
+            class="w-[480px] xl:w-[1300px] lg:w-[1024px] md:w-[780px] md:flex md:justify-between mx-auto text-[18px] mt-[-170px] md:mt-[0px] transition-[margin] md:bg-transparent bg-amber-300">
+            <div class="md:px-2 md:py-3">
+                <a class="md:px-4 py-2 px-3 block md:inline-block text-center rounded-md cursor-pointer transition-[background-color] md:hover:bg-amber-300"
+                    href="#browse">Browse</a>
+                <a class="md:px-4 py-2 px-3 block md:inline-block text-center rounded-md cursor-pointer transition-[background-color] md:hover:bg-amber-300"
+                    href="#customize">Customize</a>
+            </div>
+            <div class="md:px-2 md:py-3">
+                <a
+                    class="md:px-4 py-2 px-3 block md:inline-block text-center rounded-md cursor-pointer transition-[background-color] md:hover:bg-amber-300">Log
+                    in</a>
+                <a class="md:px-4 py-2 px-3 block md:inline-block text-center rounded-md bg-amber-300 cursor-pointer">Sign
+                    up</a>
+                <span class="block md:hidden text-center py-2 px-3" id="nav-bars"><i
+                        class="fa-solid fa-bars text-[18px]"></i></span>
+            </div>
+        </div>
+    </nav>
+    <header class="flex justify-center">
+        <div class="w-[650px] xl:w-[1300px] lg:w-[1024px] md:w-[780px] flex justify-center relative">
+            <img src="./images/koltukHeader.png" alt=""
+                class="inline-block w-[600px] xl:w-[1300px] lg:w-[1024px] md:w-[780px] cursor-pointer"
+                draggable="false">
+            <div
+                class="block absolute xl:top-[100px] xl:right-[150px] lg:top-[50px] lg:right-[75px] md:top-[25px] md:right-[50px] right-[75px] top-[50px]">
+                <span class="xl:text-[48px] lg:text-[32px] md:text-[24px] text-[18px]"
+                    style="font-family: 'Qwitcher Grypen', cursive;">The best furnitures in here</span>
+            </div>
+        </div>
+    </header>
+    <main class="w-screen bg-amber-200 my-[100px] py-9 flex justify-center" id="browse">
+        <div class="w-[480px] xl:w-[1300px] lg:w-[1024px] md:w-[780px] flex flex-col items-center">
+            <div class="flex flex-col items-center md:inline-block">
+                <div
+                    class="page-container xl:rotate-12 xl:m-5 xl:w-[500px] lg:w-[400px] lg:rotate-[10deg] md:w-[700px] m-2">
+                    <img src="./images/tekli1.png" alt="" class="image-translate-anim" draggable="false">
+                </div>
+                <div
+                    class="page-container xl:w-[450px] lg:w-[350px] py-14 xl:rotate-[-12deg] xl:m-5 lg:m-4 lg:rotate-[-10deg] md:w-[700px] m-2">
+                    <img src="./images/tekli2.png" alt="" class="w-[700px] image-translate-anim" draggable="false">
+                </div>
+            </div>
+            <div class="flex flex-col items-center sm:inline-block">
+                <div
+                    class="page-container xl:w-[450px] xl:rotate-[20deg] xl:m-5 lg:m-4 lg:w-[350px] lg:rotate-[16deg] md:w-[700px] m-2">
+                    <img src="./images/sehpa1.png" alt="" class="image-translate-anim" draggable="false">
+                </div>
+                <div
+                    class="page-container xl:w-[550px] xl:rotate-[-5deg] xl:m-5 lg:m-4 lg:w-[450px] lg:rotate-[-3deg] md:w-[700px] m-2">
+                    <img src="./images/sehpa2.png" alt="" class="image-translate-anim" draggable="false">
+                </div>
+            </div>
+            <div class="xl:m-5">
+                <div class="page-container">
+                    <img src="./images/ikili1.png" alt="" class="image-translate-anim" draggable="false">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="w-screen bg-slate-700" id="customize">
+        <div class="w-full flex flex-col items-center">
+            <div class="flex flex-col items-center">
+                <div id="furniture-input-container">
+                    <input type="radio" name="furniture-customization" class="check cursor-pointer" id="sehpa">
+                    <input type="radio" name="furniture-customization" class="check cursor-pointer" id="koltuk">
+                    <input type="radio" name="furniture-customization" class="check cursor-pointer" id="baza">
+                </div>
+                <div class="">
+                    <div class="flex w-[270px] relative text-white">
+                        <span class="w-[90px] py-1 bg-transparent mx-3 flex justify-center z-20">Sehpa</span>
+                        <span class="w-[90px] py-1 bg-transparent mx-3 flex justify-center z-20">Koltuk</span>
+                        <span class="w-[90px] py-1 bg-transparent mx-3 flex justify-center z-20">Baza</span>
+                        <span class="w-[90px] py-1 h-[32px] bg-slate-400 absolute left-[0px] transition-[margin]"
+                            id="furniture-span-container"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="my-4 text-white">
+                <div class="flex transition-[margin]" style="margin-left:200vw;" id="selection-area">
+                    <div class="w-screen">
+                        <div class="my-10">
+                            <span class="select-q-span">Sehpa sayısı</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="wood-s-container">
+                                    <span class="select-hover border-transparent">1</span>
+                                    <span class="select-hover border-transparent">2</span>
+                                    <span class="select-hover border-transparent">3</span>
+                                    <span class="select-hover border-transparent">4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <span class="select-q-span">Ağaç türü ?</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="cloth-s-container">
+                                    <span class="select-hover border-transparent">Sedir</span>
+                                    <span class="select-hover border-transparent">Göknar</span>
+                                    <span class="select-hover border-transparent">Ladin</span>
+                                    <span class="select-hover border-transparent">Servi</span>
+                                    <span class="select-hover border-transparent">Meşe</span>
+                                    <span class="select-hover border-transparent">Ceviz</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <span class="select-q-span">Sehpa rengi ?</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="color-s-container">
+                                    <span class="select-hover bg-blue-800 border-transparent">Lacivert</span>
+                                    <span class="select-hover bg-yellow-800 border-transparent">Kahverengi</span>
+                                    <span class="select-hover bg-yellow-900 border-transparent">Koyu kahve</span>
+                                    <span class="select-hover bg-white border-transparent text-black">Beyaz</span>
+                                    <span class="select-hover bg-orange-200 border-transparent text-black">Krem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-screen">
+                        <div class="my-10">
+                            <span class="select-q-span">Ağaç türü ?</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="wood-s-container">
+                                    <span class="select-hover border-transparent">Sedir</span>
+                                    <span class="select-hover border-transparent">Göknar</span>
+                                    <span class="select-hover border-transparent">Ladin</span>
+                                    <span class="select-hover border-transparent">Servi</span>
+                                    <span class="select-hover border-transparent">Meşe</span>
+                                    <span class="select-hover border-transparent">Ceviz</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <span class="select-q-span">Kumaş cinsi ?</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="cloth-s-container">
+                                    <span class="select-hover border-transparent">Pamuk</span>
+                                    <span class="select-hover border-transparent">İpek</span>
+                                    <span class="select-hover border-transparent">Denim</span>
+                                    <span class="select-hover border-transparent">Pazen</span>
+                                    <span class="select-hover border-transparent">Keten</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <span class="select-q-span">Kumaş rengi ?</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="color-s-container">
+                                    <span class="select-hover bg-pink-400 border-transparent">Pembe</span>
+                                    <span class="select-hover bg-fuchsia-300 border-transparent">Lila</span>
+                                    <span class="select-hover bg-purple-400 border-transparent">Mor</span>
+                                    <span class="select-hover bg-purple-600 border-transparent">Koyu mor</span>
+                                    <span class="select-hover bg-red-500 border-transparent">Kırmızı</span>
+                                    <span class="select-hover bg-slate-400 border-transparent">Mint</span>
+                                    <span class="select-hover bg-blue-400 border-transparent">Açık mavi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-screen">
+                        <div class="my-10">
+                            <span class="select-q-span">Baza türü ?</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="bed-type">
+                                    <span class="select-hover border-transparent">Tek kişilik</span>
+                                    <span class="select-hover border-transparent">Çift kişilik</span>
+                                    <span class="select-hover border-transparent">Üç kişilik</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <span class="select-q-span">Baza cinsi ?</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="bed-spec">
+                                    <span class="select-hover border-transparent">Vip</span>
+                                    <span class="select-hover border-transparent">Premium</span>
+                                    <span class="select-hover border-transparent">Special</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <span class="select-q-span">Yay ?</span>
+                            <div class="select-span-container">
+                                <div class="my-4" id="bed-bow">
+                                    <span class="select-hover border-transparent">Yaylı</span>
+                                    <span class="select-hover border-transparent">Yaysız</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" flex justify-center">
+            <div class="cost-container" id="cost-item">
+                <div class="cost-bar"></div>
+                <div class="cost-circle transition-[margin]"></div>
+            </div>
+        </div>
+        <div id="total-amount-div" class="flex justify-center">
+            <span></span>
+        </div>
+    </section>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>

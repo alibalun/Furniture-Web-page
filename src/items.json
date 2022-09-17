@@ -1,0 +1,156 @@
+{
+    "items": [
+        {
+            "sehpa": {
+                "sehpaSayisi": [
+                    [
+                        "1",
+                        220
+                    ],
+                    [
+                        "2",
+                        380
+                    ],
+                    [
+                        "3",
+                        470
+                    ],
+                    [
+                        "4",
+                        600
+                    ]
+                ],
+                "agacTuru": [
+                    [
+                        "Sedir",
+                        500
+                    ],
+                    [
+                        "Göknar",
+                        650
+                    ],
+                    [
+                        "Ladin",
+                        1200
+                    ],
+                    [
+                        "Servi",
+                        800
+                    ],
+                    [
+                        "Meşe",
+                        950
+                    ],
+                    [
+                        "Ceviz",
+                        780
+                    ]
+                ],
+                "renk": [
+                    "Lacivert",
+                    "Kahverengi",
+                    "Koyu kahve",
+                    "Beyaz",
+                    "Krem"
+                ]
+            }
+        },
+        {
+            "koltuk": {
+                "agacTuru": [
+                    [
+                        "Sedir",
+                        500
+                    ],
+                    [
+                        "Göknar",
+                        650
+                    ],
+                    [
+                        "Ladin",
+                        1200
+                    ],
+                    [
+                        "Servi",
+                        800
+                    ],
+                    [
+                        "Meşe",
+                        950
+                    ],
+                    [
+                        "Ceviz",
+                        780
+                    ]
+                ],
+                "kumasCinsi": [
+                    [
+                        "Pamuk",
+                        400
+                    ],
+                    [
+                        "İpek",
+                        350
+                    ],
+                    [
+                        "Denim",
+                        550
+                    ],
+                    [
+                        "Pazen",
+                        500
+                    ],
+                    [
+                        "Keten",
+                        600
+                    ]
+                ],
+                "kumasRengi": [
+                    "pember",
+                    "lila",
+                    "mor",
+                    "koyuMor",
+                    "kirmizi",
+                    "mint",
+                    "acikMavi"
+                ]
+            }
+        },
+        {
+            "baza": {
+                "bazaTuru": [
+                    [
+                        "Tek kişilik",
+                        250
+                    ],
+                    [
+                        "Çift kişilik",
+                        500
+                    ],
+                    [
+                        "Üç kişilik",
+                        700
+                    ]
+                ],
+                "bazaCinsi": [
+                    [
+                        "Vip",
+                        1800
+                    ],
+                    [
+                        "Premium",
+                        2200
+                    ],
+                    [
+                        "Special",
+                        5000
+                    ]
+                ],
+                "yay": [
+                    "Yaylı",
+                    "Yaysız"
+                ]
+            }
+        }
+    ]
+}

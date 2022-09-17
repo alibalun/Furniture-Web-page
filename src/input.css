@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities{
+    .page-container{
+        @apply relative bg-amber-300 inline-block;
+    }
+}
+@layer utilities{
+    .image-translate-anim{
+        @apply hover:-translate-y-2 cursor-pointer transition-[transform];
+    }
+}
+@layer utilities{
+    .check{
+        @apply inline-block relative border-none after:w-[30px] after:h-[30px] after:bg-white after:absolute after:left-[50%] after:top-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:rounded-full after:z-10 before:w-[22px] before:h-[22px] before:rounded-full before:z-40 before:border-[4px] before:border-transparent before:transition-[border] before:focus:border-green-600 before:absolute before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] m-4;
+    }
+}
+@layer utilities{
+    .select-hover{
+        @apply px-3 py-2 box-border cursor-pointer border-[4px] rounded-3xl hover:border-[4px] hover:border-slate-200;
+    }
+}
+@layer utilities{
+    .select-q-span{
+        @apply px-3 py-2 text-[24px] block text-center my-3;
+    }
+}
+@layer utilities{
+    .select-span-container{
+        @apply flex flex-col items-center my-3;
+    }
+}
+@layer utilities{
+    .cost-container{
+        @apply inline-block relative my-8;
+    }
+}
+@layer utilities{
+    .cost-bar{
+        @apply w-[1000px] h-[12px] rounded-2xl bg-red-600;
+    }
+}
+@layer utilities{
+    .cost-circle{
+        @apply w-[30px] h-[30px] rounded-full bg-slate-300 absolute left-0 top-[50%] translate-x-[-50%] translate-y-[-50%];
+    }
+}
